@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_boilerplate/features/authentication/views/login_view.dart';
 import 'package:riverpod_boilerplate/features/root/views/root_view.dart';
+import 'package:riverpod_boilerplate/features/settings/views/settings_view.dart';
 import 'package:riverpod_boilerplate/features/splash/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -42,7 +43,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: RoutePath.settings,
         name: RoutePath.settings,
-        builder: (context, state) => const SplashView(),
+        builder: (context, state) => const SettingsView(),
       ),
       GoRoute(
         path: RoutePath.login,
