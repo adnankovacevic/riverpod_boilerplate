@@ -270,6 +270,15 @@ class LightAppTheme extends AppTheme {
             border: Color(0xFFEBEBEB),
             hint: Color(0x99303943),
           ),
+          styles: const AppThemeStyles(
+            cardShadow: [
+              BoxShadow(
+                color: Color(0x4D000000),
+                offset: Offset(0, 8),
+                blurRadius: 23,
+              ),
+            ],
+          ),
         );
 }
 

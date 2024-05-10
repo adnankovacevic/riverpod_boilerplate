@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
+import 'package:riverpod_boilerplate/features/settings/views/settings_view.dart';
 
 final indexBottomNavbarProvider = StateProvider<int>((ref) {
   return 0;
@@ -19,9 +20,7 @@ class RootView extends ConsumerWidget {
       const Center(
         child: Text('Hello From Favorite'),
       ),
-      const Center(
-        child: Text('Hello From Settings'),
-      ),
+      const SettingsView()
     ];
     return Builder(builder: (context) {
       return Scaffold(
@@ -38,7 +37,7 @@ class RootView extends ConsumerWidget {
             BottomNavigationBarItem(
                 icon: Icon(IconsaxPlusBold.heart), label: 'Favorite'),
             BottomNavigationBarItem(
-                icon: Icon(IconsaxPlusBold.settings), label: 'Setting'),
+                icon: Icon(IconsaxPlusBold.settings), label: 'Settings'),
           ],
         ),
         body: bodies[indexBottomNavbar],

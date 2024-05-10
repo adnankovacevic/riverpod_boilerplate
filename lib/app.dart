@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_boilerplate/features/root/views/root_view.dart';
+import 'package:riverpod_boilerplate/shared/themes/app_themes.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -9,10 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Riverpod Boilerplate',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: const LightAppTheme().themeData, // Use LightAppTheme
       darkTheme: ThemeData.dark(useMaterial3: true),
       home: const RootView(),
     );
