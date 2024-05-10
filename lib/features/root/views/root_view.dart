@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:riverpod_boilerplate/features/settings/views/settings_view.dart';
+import 'package:riverpod_boilerplate/shared/widgets/app_bar.dart';
 
 final indexBottomNavbarProvider = StateProvider<int>((ref) {
   return 0;
