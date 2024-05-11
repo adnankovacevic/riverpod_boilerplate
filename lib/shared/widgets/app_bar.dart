@@ -169,7 +169,7 @@ class AppBarButton extends StatelessWidget {
   }
 }
 
-class AppBarBackButton extends StatelessWidget {
+class AppBarBackButton extends StatelessWidget implements PreferredSizeWidget {
   final Widget icon;
   final VoidCallback? onPressed;
 
@@ -187,4 +187,7 @@ class AppBarBackButton extends StatelessWidget {
       icon: icon,
     );
   }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

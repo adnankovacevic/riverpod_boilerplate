@@ -318,46 +318,57 @@ class AppThemeTypography {
 
   const AppThemeTypography({
     this.headingLarge = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 32,
       fontWeight: FontWeight.w900,
     ),
     this.heading = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 24,
       fontWeight: FontWeight.w900,
     ),
     this.headingSmall = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 20,
       fontWeight: FontWeight.w900,
     ),
     this.bodyExtraLarge = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 20,
       fontWeight: FontWeight.w500,
     ),
     this.bodyLarge = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 18,
       fontWeight: FontWeight.w500,
     ),
     this.body = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 16,
       fontWeight: FontWeight.w400,
     ),
     this.bodySmall = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 14,
       fontWeight: FontWeight.w400,
     ),
     this.bodyExtraSmall = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 12,
       fontWeight: FontWeight.w400,
     ),
     this.captionLarge = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 14,
       fontWeight: FontWeight.w700,
     ),
     this.caption = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 12,
       fontWeight: FontWeight.w600,
     ),
     this.captionSmall = const TextStyle(
+      fontFamily: AppTextStyles.poppins,
       fontSize: 10,
       fontWeight: FontWeight.w600,
     ),
